@@ -1,0 +1,14 @@
+# This Makefile assumes that the rendering tools are installed.
+# It will work inside a doccer container, but it will also work
+# outside as long as all the tools are present.
+
+all:	host-net.png html
+
+host-net.png: net.nwdiag
+	nwdiag net.nwdiag -o /target/net.png
+
+ORG_FILES=$(wildcard *.org)
+OUT= target/
+html: $(ORG_FILES)
+	orgmk example.html
+	cp example.html /target

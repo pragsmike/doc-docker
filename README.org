@@ -1,0 +1,20 @@
+* doc-docker
+
+A Docker image loaded with document-generation and rendering tools.
+
+It's intended for use in an automated document-publishing pipeline
+similar to Github Pages.
+
+- Emacs [[http://orgmode.org/][org-mode]]
+- [[https://www.tug.org/texlive/][LaTeX]]
+- [[http://www.graphviz.org/][GraphViz]]
+- [[http://plantuml.com/][PlantUML]]
+- [[http://blockdiag.com/en/nwdiag/][nwdiag]]
+
+* Future Plans
+
+** TODO Add [[http://pandoc.org/][pandoc]]
+
+* Thanks to
+
+- [[https://github.com/adzerk-oss/boot-clj-docker-image][boot-clj-docker-image]] for figuring out how to install Java 8 reliably!
